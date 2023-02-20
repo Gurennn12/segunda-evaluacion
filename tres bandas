@@ -1,0 +1,20 @@
+#include<iostream>
+
+using namespace std;
+int main(){
+	char *reyes[3],nombre[10];
+	int fil,cont,nveces;
+	char p_nombre;
+	for(nveces=1;nveces<3;nveces++){
+	
+		for(fil=0;fil<3;fil++){
+	
+			if(*(*(reyes+fil))>*(*(reyes+fil+1))){
+				aux=reyes[fil];
+				reyes[fil]=reyes[fil+1];
+				reyes[fil+1]=aux;
+			}
+		}
+	
+	}
+}
